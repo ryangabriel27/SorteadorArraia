@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sorteio Maple Bear Limeira</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.png" alt="logoArraia"/>
+    </header>
+
+    <!-- TELA CONFIGURAÇÃO -->
+    <section id="screen-config" class="screen active">
+
+        <div class="card">
+
+            <h1>Sorteio <br/>Maple Bear Limeira</h1>
+
+            <input type="number" id="inicio" placeholder="Número Inicial">
+
+            <input type="number" id="fim" placeholder="Número Final">
+
+            <input type="number" id="quantidade" placeholder="Quantidade de Vencedores">
+
+            <button id="btnSortear">
+                Iniciar Sorteio
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- TELA EMBARALHAMENTO -->
+    <section id="screen-shuffle" class="screen">
+
+        <h2>Embaralhando...</h2>
+
+        <div id="shuffle-container"></div>
+
+    </section>
+
+    <!-- TELA CONTAGEM -->
+    <section id="screen-countdown" class="screen">
+
+        <div id="countdown">3</div>
+
+    </section>
+
+    <!-- TELA RESULTADO -->
+    <section id="screen-result" class="screen">
+
+        <h2>🎉 Vencedores 🎉</h2>
+
+        <div id="winner-area"></div>
+
+        <button id="btnRestart">
+            Novo Sorteio
+        </button>
+
+    </section>
+
+    <footer>
+        <img src="img/Logo_Maple_Bear.png" alt="logoMaple">
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
